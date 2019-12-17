@@ -36,6 +36,7 @@ func handle(conn net.Conn) {
 	}
 }
 
+// TODO add handling for all missing cases when ascii is not between 97 and 122 !!!
 func rot13(bs []byte) []byte {
 	var r13 = make([]byte, len(bs))
 	for i, v := range bs {
